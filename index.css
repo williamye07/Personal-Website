@@ -1,0 +1,142 @@
+div {
+    font-family: 'Ubuntu';
+}
+
+.gray-box {
+    background-color: lightgray;
+}
+
+.light-gray-box {
+    background-color: #ECEBEB;
+}
+
+.view {
+    /* background-color: #F5F4F4; */
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .5rem;
+    transition: color .15s;
+    cursor: pointer;
+}
+
+.btn-white {
+    color: black;
+    background-color: white;
+    border-color: black;
+    margin-right: 0.75%;
+}
+
+.btn-white:hover {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
+.btn-black {
+    color: white;
+    background-color: black;
+    border-color: white;
+    margin-right: 0.75%;
+}
+
+.btn-black:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.project {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 95%;
+    height: 350px;
+}
+
+.p-image-left {
+    z-index: 1;
+    position: relative;
+    left: 2rem;
+    border-radius: .75rem;
+    width: 60%;
+    height: 100%;
+}
+
+.p-image-right {
+    z-index: 1;
+    position: relative;
+    right: 2rem;
+    border-radius: .75rem;
+    width: 60%;
+    height: 100%;
+}
+
+.p-desc-left {
+    z-index: 2;
+    position: relative;
+    left: 2rem;
+    bottom: 0.5rem;
+    border-radius: .75rem;
+    width: 60%;
+    height: 55%;
+}
+
+.p-desc-right {
+    z-index: 2;
+    position: relative;
+    right: 2rem;
+    bottom: 0.5rem;
+    border-radius: .75rem;
+    width: 60%;
+    height: 55%;
+}
+
+.desc {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 100%;
+    line-height: 1.4;
+}
+
+#nav_bar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+    height: 6vh;
+    align-items: center;
+}
+
+#about {
+    width: 50%;
+    border-radius: .75rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+#contact {
+    width: 50%;
+    border-radius: .75rem;
+    line-height: 1.6;
+    text-align: center;
+}

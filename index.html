@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Ubuntu' />
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <div id="nav_bar">
+        <button id="about_btn" class="btn btn-white" onclick="aboutView()">about</button>
+        <button id="projects_btn" class="btn btn-white" onclick="projectView()">projects</button>
+        <button id="contact_btn" class="btn btn-white" onclick="contactView()">contact</button>
+        <button id="resume_btn" class="btn btn-black" onclick="openResume()">resume</button>
+    </div>
+
+    <div id="about_view" class="view">
+        <h1>william ye</h1>
+
+        <img src="pic.png" alt="me" style="border-radius: 50%; width:150px; height:150px;">
+
+        <br>
+        <div id="about">
+            <b>Thanks for stopping by!</b>
+            <br><br> Currently I am a 3rd year computer science student at the University of Waterloo and I have
+            previous experience as a fullstack developer. I've worked at Prodigy, an Ed Tech company, and for the
+            Computer Science Computing Facility
+            for my university.
+            <br><br> In my spare time, I like playing with tech and expanding my skill set. My latest interest is iOS
+            development. When I'm not programming, I like gaming, basketball, and investing in stocks. Feel free to
+            contact me. I'm always happy
+            to chat!
+        </div>
+    </div>
+
+    <div id="project_view" class="view" style="height:auto;">
+        <h1>projects</h1>
+
+        <br><br>
+        <div id="p1" class="project">
+
+            <div id="p1_image" class="p-image-left gray-box">
+                <img src="projects/passwordManager.jpg" alt="passwordManager" class="p-image-left" style="width: 25%; left: 14.5rem;">
+            </div>
+
+            <div id="p1_desc" class="p-desc-right light-gray-box" style="height: 45%">
+                <div id="p1_desc_txt" class="desc" style="text-align: right;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>COMING SOON</div>
+                        <div><b style="font-size: 20px;">Password Manager</b></div>
+                    </div>
+                    <br> A current work-in-progress project. This is a password manager app made using SwiftUI and
+                    Core Data. The app will be able to store all of the user's password in one location, making it
+                    easier for the user to access through a custom master password.
+                </div>
+                <div id="p1_desc_tools" style="box-sizing: border-box; padding-left: 12%;">
+                    <div style="display: flex; align-items: center;">
+                        <div style="margin-right: 5%;">Swift UI</div>
+                        <div style="margin-right: 65%;">CoreData</div>
+                        <a href="https://github.com/williamye07/password_manager">
+                            <img src="logos/GitLogo.png" alt="github" style="width: 40px; height: 40px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <div id="p2" class="project">
+            <div id="p2_desc" class="p-desc-left light-gray-box">
+                <div id="p2_desc_txt" class="desc" style="text-align: left;">
+                    <b style="font-size: 20px;">Memorize</b>
+                    <br><br> A memorization card game built using SwiftUI. This game, also known as Matching Pairs or
+                    Concentration, is played with a set of cards face down and the user picks two cards per turn. The
+                    goal is to pick two cards of matching
+                    emojis in each turn. Some new features in this version include giving bonus points for quick
+                    matching, fun animations, and the ability to customize the cards by adding new themes and emojis.
+                </div>
+                <div id="p2_desc_tools" style="box-sizing: border-box; padding-right: 12%;">
+                    <div style="display: flex; align-items: center;">
+                        <a href="https://github.com/williamye07/MemorizeGame"
+                            style="margin-right: 80%; margin-left: 3%;">
+                            <img src="logos/GitLogo.png" alt="github" style="width: 40px; height: 40px;">
+                        </a>
+                        <div>Swift UI</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="p2_image" class="p-image-right gray-box">
+                <img src="projects/memGif.gif" alt="memGif" class="p-image-right" style="width: 100%; left: 0.1rem;">
+            </div>
+        </div>
+
+        <br><br>
+        <div id="p3" class="project">
+            <div id="p3_image" class="p-image-left gray-box">
+                <img src="projects/setGif.gif" alt="setGif" class="p-image-left" style="width: 100%; left: 0.1rem;">
+            </div>
+
+            <div id="p3_desc" class="p-desc-right light-gray-box" style="height: 60%;">
+                <div id="p3_desc_txt" class="desc" style="text-align: right;">
+                    <b style="font-size: 20px;">Set (Card Game)</b>
+                    <br><br> A card game built using SwiftUI that challenges your logical reasoning skills. The deck for
+                    this game contains 81 unique cards with designs that vary over 4 features: number of shapes, shape,
+                    color, and shade. Each feature
+                    has three possibilities and the goal of the game is to form a set at every turn. A set consists of 3
+                    cards where every feature must either be all the same or all different. This version is a single
+                    player mode where the player aims
+                    to maximize the number of sets found out of the laid out cards.
+
+                </div>
+                <div id="p3_desc_tools" style="box-sizing: border-box; padding-left: 12%;">
+                    <div style="display: flex; align-items: center;">
+                        <div style="margin-right: 82%;">Swift UI</div>
+                        <a href="https://github.com/williamye07/Set-Card-Game">
+                            <img src="logos/GitLogo.png" alt="github" style="width: 40px; height: 40px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <div id="p4" class="project">
+            <div id="p4_desc" class="p-desc-left light-gray-box">
+                <div id="p4_desc_txt" class="desc" style="text-align: left;">
+                    <b style="font-size: 20px;">TFTracker</b> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://tft-scouter.herokuapp.com">
+                        <img src="logos/link.png" alt="link" style="width: 2.5%">
+                    </a>
+                    <br><br> A simple tool to help Teamfight Tactics (TFT) players. TFT is developed by Riot Games where
+                    players build a team and compete against 7 other players to be the last one alive. This tool is
+                    designed to track which opponents
+                    the user has faced to derive a smaller pool of possible opponents the user will face in the next
+                    rounds. Then players will be able to scout these opponents in-game and analyze their weaknesses.
+                </div>
+                <div id="p4_desc_tools" style="box-sizing: border-box; padding-right: 12%;">
+                    <div style="display: flex; align-items: center;">
+                        <a href="https://github.com/williamye07/TfTracker" style="margin-right: 28%; margin-left: 3%;">
+                            <img src="logos/GitLogo.png" alt="github" style="width: 40px; height: 40px;">
+                        </a>
+                        <div style="margin-right: 5%;">React</div>
+                        <div style="margin-right: 5%;">Flask</div>
+                        <div style="margin-right: 5%;">Styled-Components</div>
+                        <div>Heroku</div>
+                    </div>
+                </div>
+            </div>
+            <div id="p4_image" class="p-image-right" style="width: 60%; height: 100%;">
+                <img src="projects/tftpic.png" alt="TFTracker" class="p-image-right" style="width: 100%; left: 0.35rem;">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact_view" class="view">
+        <h1 id="contactTitle">get in touch</h1>
+
+        <div id="contact">
+            I'm currently looking for Fall 2021 Internships. If you have any opportunities available, please do not
+            hesitate to contact me.
+        </div>
+
+        <br><br>
+        <div style="width: 25%; display: flex; justify-content: space-around;">
+            <a href="https://github.com/williamye07">
+                <img src="logos/GitLogo.png" alt="github" style="width: 40px; height: 40px;">
+            </a>
+            <a href="https://linkedin.com/in/william-ye77">
+                <img src="logos/Linkedin.png" alt="linkedin" style="width: 40px;">
+            </a>
+            <a href="mailto: whtye@uwaterloo.ca">
+                <img src="logos/mail.png" alt="mail" style="width: 42px;">
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
